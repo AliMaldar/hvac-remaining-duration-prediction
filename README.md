@@ -93,25 +93,6 @@ cohort and saved run; they are integrity checks, not predictor variables. This
 interface description does not supply the confidential settings or create a
 publicly runnable reproduction of the reported benchmark.
 
-## Recorded environment and source identity
-
-The saved five-seed experiment records Python 3.13.15, NumPy 2.1.3, pandas 2.2.3,
-scikit-learn 1.6.1, joblib 1.6.0 and PyTorch 2.11.0+cu130, CUDA 13.0 and cuDNN
-version code 92700, on a Tesla T4 GPU (about 14.6 GB). Mixed precision was enabled;
-strict deterministic kernels were disabled. Effective batch sizes were 256
-trajectory groups and 256 duration rows per mode. This is the recorded environment
-for Notebook 07; a complete separate environment record for the original
-seed-42 training was unavailable. Plotting additionally uses Matplotlib and SciPy;
-their versions were not recorded in that manifest. Seeded runs need not be bitwise
-identical across hardware/software configurations.
-
-Notebook-source SHA-256: `d12e8b8f184b0e99d2bee8655f37c5dc9469f269006a85be3e1bdfabf402fe75`.
-This hashes the seven notebook files in filename order, appending the UTF-8
-filename, a null byte, the exact file bytes and a null byte for each file. It
-identifies this source snapshot independently of README changes. A remote commit
-or release tag has not been verified here. The accompanying paper-figure builder
-is an internal reporting script and is not part of this eight-file release.
-
 ## Data availability
 
 The building monitoring data are confidential and cannot be distributed. Private
